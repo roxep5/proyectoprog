@@ -32,7 +32,7 @@ public class DniEntradas {
         System.out.println("- Opcion 2: ver entradas vendidas con sus dnis");
         System.out.println("- Opcion 3: Cuantas entradas quedan?");
         System.out.println("- 0 para salir ");
-        System.out.println("----------------------------------");
+        System.out.println("---------------------------------------");
         int opcion=0;
         opcion=teclado.nextInt();
         while(opcion!=1&&opcion!=2&&opcion!=3){
