@@ -95,14 +95,16 @@ public class DniEntradas {
                              System.out.println("Introduce cuantas entradas quieres comprar, le quedan "+quedanDni+" por comprar");
                             entradase=teclado.nextInt();
                            
-                            int varinter=entradas[posicion];
+                            int varinter=entradas[posicion];//creaos una variable intermedia para guardar el numero de entradas
                             varinter+=entradase;
+                            //comprobamos que no varinter no sea mayor que 4
                              while(varinter>4){
                                  varinter-=entradase;
                             System.out.println("introduzca numero de entradas, maximo: 4, quedan: "+faltan+" llevas: "+varinter);
                             entradase=teclado.nextInt();
-                            varinter+=entradase;
+                            varinter+=entradase;//tras comporobar 
                         }
+                  
                              entradas[posicion]=varinter;
                         }
                         
